@@ -42,11 +42,11 @@ public class UserService {
 	}
 
 	private void updateData(User newObj, User obj) {
-		newObj.getName();
-		newObj.getEmail();
+		newObj.setName(obj.getName());
+		newObj.setEmail(obj.getEmail());
 
 	}
-
+     
 	public User fromDTO(UserDTO objDto) {
 		return new User(objDto.getId(), objDto.getName(), objDto.getEmail());
 	}
